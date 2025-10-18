@@ -1,0 +1,253 @@
+doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlowDrop — Affordable Beauty</title>
+  <meta name="description" content="GlowDrop — Affordable hair & skin care. Serums, face washes and haircare products at pocket-friendly prices." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><rect width='100%' height='100%' fill='%23f6f0e6'/><circle cx='30' cy='24' r='12' fill='%23ff9f9f'/></svg>">
+  <style>
+    :root{
+      --bg:#fff;
+      --muted:#6b6b6b;
+      --accent:#f6a6a6;
+      --dark:#0f1720;
+      --card:#fbfaf9;
+      --radius:12px;
+      --maxw:1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--dark);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#fff 0%, #fffbf9 100%);
+      color:var(--dark);
+      line-height:1.5;
+      padding:24px;
+      display:flex;
+      justify-content:center;
+      min-height:100vh;
+    }
+    .wrap{width:100%;max-width:var(--maxw);}
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:20px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;
+    }
+    .logo{
+      width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#ffd6d6);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:18px;box-shadow:0 6px 18px rgba(246,166,166,.15)
+    }
+    nav{display:flex;gap:12px;align-items:center}
+    .btn{
+      background:transparent;border:1px solid rgba(15,23,32,.08);padding:10px 14px;border-radius:12px;text-decoration:none;color:var(--dark);font-weight:600;
+    }
+    .hero{
+      background:var(--card);
+      padding:28px;
+      border-radius:var(--radius);
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+      align-items:center;
+      margin-bottom:18px;
+      box-shadow:0 8px 30px rgba(15,23,32,.04);
+    }
+    .hero-inner{display:flex;gap:18px;align-items:center}
+    .hero h1{margin:0;font-size:22px}
+    .hero p{margin:0;color:var(--muted)}
+    .actions{display:flex;gap:12px;margin-top:6px}
+    .primary{
+      background:linear-gradient(90deg,var(--accent),#ff8b8b);
+      color:white;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(246,166,166,.18)
+    }
+    .secondary{background:transparent;border:1px dashed rgba(15,23,32,.06);padding:10px 12px;border-radius:12px;text-decoration:none;color:var(--dark)}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
+      margin-bottom:18px;
+    }
+    .card{
+      background:white;padding:14px;border-radius:14px;border:1px solid rgba(15,23,32,.04);display:flex;flex-direction:column;gap:10px;
+    }
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:10px;background:linear-gradient(180deg,#fff,#faf3f3)}
+    .price{font-weight:800}
+    .muted{color:var(--muted);font-size:14px}
+    footer{
+      margin-top:12px;padding:14px;border-radius:12px;background:linear-gradient(180deg,#fff,#fffbfb);display:flex;flex-direction:column;gap:10px;border:1px solid rgba(15,23,32,.03)
+    }
+    .contact-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .social{display:flex;gap:10px;align-items:center}
+    .small{font-size:13px;color:var(--muted)}
+    .qr{width:94px;height:94px;border-radius:10px;overflow:hidden;border:1px solid rgba(15,23,32,.04)}
+    /* responsive */
+    @media(min-width:800px){
+      .hero{grid-template-columns:1fr 360px}
+      .hero-inner{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <a class="brand" href="/">
+        <div class="logo" aria-hidden="true">GD</div>
+        <div>
+          <div style="font-weight:800">GlowDrop</div>
+          <div style="font-size:12px;color:var(--muted)">Affordable beauty · hair & skin</div>
+        </div>
+      </a>
+      <nav>
+        <a class="btn" href="#products">Products</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="https://www.instagram.com/GlowDropBeauty" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">GlowDrop — Affordable beauty for everyday glow</h1>
+        <p>Minimal ingredients, effective results. Serums, face washes and haircare — curated for everyday budgets.</p>
+        <div class="actions">
+          <a class="primary" href="https://www.glowdrop.com" target="_blank" rel="noopener">Shop now — www.glowdrop.com</a>
+          <a class="secondary" href="#products">View products</a>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:14px;align-items:center">
+          <div style="background:#fff;padding:8px 10px;border-radius:12px;border:1px solid rgba(15,23,32,.04);">
+            <div style="font-weight:700">Contact</div>
+            <div class="small">+91 12345 67890</div>
+          </div>
+          <div style="background:#fff;padding:8px 10px;border-radius:12px;border:1px solid rgba(15,23,32,.04);">
+            <div style="font-weight:700">Follow</div>
+            <div class="small">@GlowDropBeauty</div>
+          </div>
+        </div>
+      </div>
+
+      <aside style="display:flex;flex-direction:column;gap:12px;align-items:center;">
+        <div style="text-align:center">
+          <div style="font-size:13px;color:var(--muted);margin-bottom:8px">Quick shop</div>
+          <div style="font-weight:800;font-size:18px">Pocket-friendly prices</div>
+          <div class="small" style="margin-top:6px">Serum ₹199 · Face Wash ₹129 · Hair Oil ₹149</div>
+        </div>
+
+        <div class="qr" aria-hidden="false">
+          <!-- QR image generated by free QR API; points to your shop -->
+          <img alt="QR to shop" style="width:100%;height:100%;display:block" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.glowdrop.com">
+        </div>
+
+        <a class="secondary" href="https://www.glowdrop.com" target="_blank" rel="noopener">Open online shop</a>
+      </aside>
+    </section>
+
+    <section id="products">
+      <h2 style="margin:8px 0 12px 0">Featured products</h2>
+      <div class="grid" aria-live="polite">
+        <!-- Product 1 -->
+        <article class="card" aria-labelledby="p1">
+          <img alt="Glow Serum - Vitamin C" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23fff2f2'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' fill='%23ff9f9f'>Glow Serum</text></svg>">
+          <div>
+            <div id="p1" style="font-weight:800">Glow Serum — Vitamin C</div>
+            <div class="muted">Brightening, non-sticky, light formula</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <div class="price">₹199</div>
+            <a class="btn" href="https://www.glowdrop.com/product/glow-serum" target="_blank" rel="noopener">Buy</a>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="card" aria-labelledby="p2">
+          <img alt="Gentle Face Wash" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23f7f7ff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' fill='%23889ff7'>Face Wash</text></svg>">
+          <div>
+            <div id="p2" style="font-weight:800">Gentle Face Wash</div>
+            <div class="muted">Daily cleanser for normal to oily skin</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <div class="price">₹129</div>
+            <a class="btn" href="https://www.glowdrop.com/product/face-wash" target="_blank" rel="noopener">Buy</a>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="card" aria-labelledby="p3">
+          <img alt="Nourishing Hair Oil" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23fff7ed'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' fill='%23f7b86f'>Hair Oil</text></svg>">
+          <div>
+            <div id="p3" style="font-weight:800">Nourishing Hair Oil</div>
+            <div class="muted">Light oil to reduce breakage & add shine</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <div class="price">₹149</div>
+            <a class="btn" href="https://www.glowdrop.com/product/hair-oil" target="_blank" rel="noopener">Buy</a>
+          </div>
+        </article>
+
+        <!-- Product 4 - sample bundle -->
+        <article class="card" aria-labelledby="p4">
+          <img alt="Glow Bundle" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23f1fff6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' fill='%2393f7b8'>Starter Bundle</text></svg>">
+          <div>
+            <div id="p4" style="font-weight:800">Glow Starter Bundle</div>
+            <div class="muted">Serum + Face Wash — pocket-friendly duo</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <div class="price">₹299</div>
+            <a class="btn" href="https://www.glowdrop.com/product/starter-bundle" target="_blank" rel="noopener">Buy</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer id="contact" aria-labelledby="contact-title">
+      <h3 id="contact-title" style="margin:0 0 4px 0">Contact & Info</h3>
+      <div class="contact-row">
+        <div>
+          <div style="font-weight:800">GlowDrop</div>
+          <div class="small">Affordable beauty · hair & skin care</div>
+          <div style="margin-top:8px"><strong>Phone:</strong> <a href="tel:+911234567890">+91 12345 67890</a></div>
+          <div><strong>Shop:</strong> <a href="https://www.glowdrop.com" target="_blank" rel="noopener">www.glowdrop.com</a></div>
+          <div class="small" style="margin-top:6px">Instagram: <a href="https://www.instagram.com/GlowDropBeauty" target="_blank" rel="noopener">@GlowDropBeauty</a></div>
+        </div>
+
+        <div style="margin-left:auto;display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+          <div class="small">Send quick message:</div>
+          <!-- simple contact form using mailto fallback -->
+          <form action="mailto:hello@glowdrop.com" method="post" enctype="text/plain" style="display:flex;gap:8px;flex-direction:column;min-width:230px">
+            <input name="Name" placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,32,.06)">
+            <input name="Email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,32,.06)">
+            <textarea name="Message" placeholder="Message or order details" rows="3" style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,32,.06)"></textarea>
+            <div style="display:flex;gap:8px">
+              <button type="submit" class="primary" style="padding:8px 12px;font-size:14px">Send</button>
+              <a class="btn" href="https://www.glowdrop.com" target="_blank" rel="noopener">Open shop</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;flex-wrap:wrap">
+        <div class="small">© <span id="year"></span> GlowDrop — Affordable beauty</div>
+        <div class="social small">Designed with ❤️ · <a href="#" style="margin-left:8px;color:inherit;text-decoration:underline">Privacy</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // small script: insert year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Accessible keyboard focus for anchors (small enhancement)
+    document.querySelectorAll('a').forEach(a=>a.addEventListener('click',e=>{
+      // no-op; left for future behavior
+    }));
+  </script>
+</body>
+</html>
